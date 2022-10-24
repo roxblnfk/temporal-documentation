@@ -102,7 +102,7 @@ For example imaging a UI or CLI button that allows to call `retryNow` signal on 
 To implement this feature you can redesign the above interface to:
 
 ```php
-#[WorkflowInterface
+#[WorkflowInterface]
 interface Retryable {
     #[SignalMethod]
     public function retryNow(): void;
